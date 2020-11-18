@@ -24,5 +24,10 @@ namespace WpfBiblioteca
         {
             InitializeComponent();
         }
+
+        private void btnCercaLibro_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

@@ -5,8 +5,30 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfBiblioteca"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="513.086" Width="827.163">
     <Grid>
-        
+        <Label Content="biblioteca" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="48" Width="547" FontFamily="Showcard Gothic" FontSize="36" HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom"/>
+        <ListView HorizontalAlignment="Left" Height="337" Margin="10,104,0,0" VerticalAlignment="Top" Width="799">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Titolo" Width="150px" DisplayMemberBinding="{Binding Titolo}"/>
+                    <GridViewColumn Header="Autore" Width="150px" DisplayMemberBinding="{Binding Autore}"/>
+                    <GridViewColumn Header="Editore" Width="150px" DisplayMemberBinding="{Binding Editore}"/>
+                    <GridViewColumn Header="Anno pubblicazione" Width="150px" DisplayMemberBinding="{Binding AnnoPubblicazione}"/>
+                    <GridViewColumn Header="numero pagine" Width="150px" DisplayMemberBinding="{Binding NumeroPagine}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <TextBox x:Name="txtCercaLibro" HorizontalAlignment="Left" Height="36" Margin="10,63,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="271"/>
+        <Button x:Name="btnCercaLibro" Content="Cerca Libro" HorizontalAlignment="Left" Margin="286,63,0,0" VerticalAlignment="Top" Width="121" Height="36"/>
+        <Button x:Name="btnAggiungiLibro" Content="Aggiungi Libro" HorizontalAlignment="Left" Margin="688,10,0,0" VerticalAlignment="Top" Width="121" Height="48"/>
+        <TextBox x:Name="txtCercaAutore" HorizontalAlignment="Left" Height="36" Margin="412,63,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="271"/>
+        <Button x:Name="btnCercaAutore" Content="Cerca Autore" HorizontalAlignment="Left" Margin="688,63,-17,0" VerticalAlignment="Top" Width="121" Height="36"/>
+        <Label Content="i libri sono: " HorizontalAlignment="Left" Margin="252,446,0,0" VerticalAlignment="Top" Width="431" HorizontalContentAlignment="Right"/>
+        <Label x:Name="lblNumeroLibri" Content="" HorizontalAlignment="Left" Margin="688,446,0,0" VerticalAlignment="Top" Width="121"/>
+        <Button x:Name="btnInformazioniLibro" Content="informazioni libro" HorizontalAlignment="Left" Margin="10,446,0,0" VerticalAlignment="Top" Width="117" Height="26"/>
+        <Button x:Name="btnReadingTime" Content="reading time" HorizontalAlignment="Left" Margin="132,446,0,0" VerticalAlignment="Top" Width="115" Height="26"/>
+        <Button x:Name="btnAggiungiLibro_Copy" Content="informaioni&#xD;&#xA;sulla biblioteca" HorizontalAlignment="Left" Margin="562,10,0,0" VerticalAlignment="Top" Width="121" Height="48"/>
+
     </Grid>
 </Window>
