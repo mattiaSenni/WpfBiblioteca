@@ -12,14 +12,14 @@ namespace WpfBiblioteca
 
         public Biblioteca(string n, string i, string oA, string oC, List<Libro> libri)
         {
-            
-            
+
+
             List<Libro> libri = new List<Libro>();
             Nome = n;
             Indirizzo = i;
             OrarioApertura = oA;
             OrarioChiusura = oC;
-            
+
         }
         public string Nome
         {
@@ -63,14 +63,14 @@ namespace WpfBiblioteca
         {
             get;
             set;
-            
+
         }
 
         public string OrarioChiusura
         {
             get;
             set;
- 
+
         }
 
         public List<Libro> ListaLibri
@@ -78,7 +78,7 @@ namespace WpfBiblioteca
             get;
             set;
 
- 
+
         }
 
 
