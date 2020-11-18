@@ -16,7 +16,11 @@ namespace WpfBiblioteca
 
         public Libro(string titolo,string autore,int annoPubblicazione,string editore,int numeroPag )
         {
-
+            Titolo = titolo;
+            Autore = autore;
+            AnnoPubblicazione = annoPubblicazione;
+            Editore = editore;
+            NumeroPag = numeroPag;
         }
         public string Titolo
         {
@@ -93,6 +97,35 @@ namespace WpfBiblioteca
                 _numeroPag = value;
             }
         }
-
+        public override string ToString()
+        {
+            string dati = "";
+            dati = Titolo + " " + Autore + " " + AnnoPubblicazione.ToString() + " " + Editore + " " + NumeroPag.ToString();
+            return dati;
+        }
+        public string ReadTime()
+        {
+            string appoggio="";
+            if (NumeroPag < 100)
+            {
+                appoggio = "1h";
+            }
+            else
+            {
+                if (NumeroPag > 100 && NumeroPag < 200)
+                {
+                    appoggio = "2h";
+                }
+                else
+                {
+                    if (NumeroPag > 200)
+                    {
+                        appoggio = "più di 2h";
+                    }
+                }
+            }
+            
+            return appoggio;
+        }
     }
 }
