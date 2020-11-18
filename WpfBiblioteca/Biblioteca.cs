@@ -77,10 +77,11 @@ namespace WpfBiblioteca
         {
             get;
             set;
+
  
         }
 
-        
+
 
         public void AddLibro()
         {
@@ -89,7 +90,7 @@ namespace WpfBiblioteca
 
         public void RicercaLibro()
         {
-            
+            throw new System.NotImplementedException();
         }
 
         public void RicercaLibroAutore()
