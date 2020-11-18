@@ -111,14 +111,24 @@ namespace WpfBiblioteca
             }
         }
 
-        public void CercaLibriAutore(string nominativoAutore)
+        public List<Libro> CercaLibriAutore(string nominativoAutore)
         {
-           
+            List<Libro> listaLibriAutore;
+
+            foreach (Libro l in _listaLibri)
+            {
+                if (l.Autore == nominativoAutore)
+                {
+                    listaLibriAutore.Add(l);
+                }
+            }
+
+            return listaLibriAutore;
         }
 
-        public void Numerolibri()
+        public int Numerolibri()
         {
-            throw new System.NotImplementedException();
+            return _listaLibri.Count; 
         }
     }
 }
