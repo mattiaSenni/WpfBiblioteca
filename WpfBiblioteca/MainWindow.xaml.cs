@@ -25,7 +25,37 @@ namespace WpfBiblioteca
             InitializeComponent();
         }
 
+        private void btnAggiungiLibro_Copy_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnAggiungiLibro_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
         private void btnCercaLibro_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnCercaAutore_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnInformazioniLibro_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnReadingTime_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
         }
