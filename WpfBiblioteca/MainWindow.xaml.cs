@@ -120,6 +120,7 @@ namespace WpfBiblioteca
             {
                 Libro l = new Libro(txtTitolo.Text, txtAutore.Text, int.Parse(txtAnnoPubblicazione.Text), txtEditore.Text, int.Parse(txtNumeroPagine.Text));
                 biblioteca.ListaLibri.Add(l);
+                lstLibri.ItemsSource = null;
                 lstLibri.ItemsSource = biblioteca.ListaLibri;
                 grdHome.Visibility = Visibility.Visible;
                 grdAggiungiLibro.Visibility = Visibility.Hidden;
