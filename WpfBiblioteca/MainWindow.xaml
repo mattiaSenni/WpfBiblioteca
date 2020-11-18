@@ -9,7 +9,7 @@
     <Grid>
         <Grid x:Name="grdHome">
             <Label Content="biblioteca" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="48" Width="547" FontFamily="Showcard Gothic" FontSize="36" HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom"/>
-            <ListView HorizontalAlignment="Left" Height="337" Margin="10,104,0,0" VerticalAlignment="Top" Width="799" SelectionChanged="ListView_SelectionChanged">
+            <ListView x:Name="lstLibri" HorizontalAlignment="Left" Height="337" Margin="10,104,0,0" VerticalAlignment="Top" Width="799" SelectionChanged="ListView_SelectionChanged">
                 <ListView.View>
                     <GridView>
                         <GridViewColumn Header="Titolo" Width="150px" DisplayMemberBinding="{Binding Titolo}"/>
@@ -29,7 +29,7 @@
             <Label x:Name="lblNumeroLibri" Content="" HorizontalAlignment="Left" Margin="688,446,0,0" VerticalAlignment="Top" Width="121"/>
             <Button x:Name="btnInformazioniLibro" Content="informazioni libro" HorizontalAlignment="Left" Margin="10,446,0,0" VerticalAlignment="Top" Width="117" Height="26" Click="btnInformazioniLibro_Click" IsEnabled="False"/>
             <Button x:Name="btnReadingTime" Content="reading time" HorizontalAlignment="Left" Margin="132,446,0,0" VerticalAlignment="Top" Width="115" Height="26" Click="btnReadingTime_Click" IsEnabled="False"/>
-            <Button x:Name="btnAggiungiLibro_Copy" Content="informaioni&#xD;&#xA;sulla biblioteca" HorizontalAlignment="Left" Margin="562,10,0,0" VerticalAlignment="Top" Width="121" Height="48" Click="btnAggiungiLibro_Copy_Click"/>
+            <Button x:Name="btnInformazioniBiblioteca" Content="informaioni&#xD;&#xA;sulla biblioteca" HorizontalAlignment="Left" Margin="562,10,0,0" VerticalAlignment="Top" Width="121" Height="48" Click="btnInformazioniBiblioteca_Click"/>
         </Grid>
         <Grid x:Name="grdAggiungiLibro" Visibility="Hidden">
             <Button x:Name="btnHome" Content="HOME" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="110" Height="64" FontSize="22" Click="btnHome_Click"/>

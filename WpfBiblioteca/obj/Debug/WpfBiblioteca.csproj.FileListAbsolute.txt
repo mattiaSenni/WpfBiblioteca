@@ -1,0 +1,15 @@
+C:\Users\mattia.senni\Desktop\verifica\WpfBiblioteca\WpfBiblioteca\bin\Debug\WpfBiblioteca.exe.config
+C:\Users\mattia.senni\Desktop\verifica\WpfBiblioteca\WpfBiblioteca\bin\Debug\WpfBiblioteca.exe
+C:\Users\mattia.senni\Desktop\verifica\WpfBiblioteca\WpfBiblioteca\bin\Debug\WpfBiblioteca.pdb
+C:\Users\mattia.senni\Desktop\verifica\WpfBiblioteca\WpfBiblioteca\obj\Debug\WpfBiblioteca.csprojAssemblyReference.cache
+C:\Users\mattia.senni\Desktop\verifica\WpfBiblioteca\WpfBiblioteca\obj\Debug\MainWindow.g.cs
+C:\Users\mattia.senni\Desktop\verifica\WpfBiblioteca\WpfBiblioteca\obj\Debug\App.g.cs
+C:\Users\mattia.senni\Desktop\verifica\WpfBiblioteca\WpfBiblioteca\obj\Debug\WpfBiblioteca_MarkupCompile.cache
+C:\Users\mattia.senni\Desktop\verifica\WpfBiblioteca\WpfBiblioteca\obj\Debug\WpfBiblioteca_MarkupCompile.lref
+C:\Users\mattia.senni\Desktop\verifica\WpfBiblioteca\WpfBiblioteca\obj\Debug\MainWindow.baml
+C:\Users\mattia.senni\Desktop\verifica\WpfBiblioteca\WpfBiblioteca\obj\Debug\WpfBiblioteca.g.resources
+C:\Users\mattia.senni\Desktop\verifica\WpfBiblioteca\WpfBiblioteca\obj\Debug\WpfBiblioteca.Properties.Resources.resources
+C:\Users\mattia.senni\Desktop\verifica\WpfBiblioteca\WpfBiblioteca\obj\Debug\WpfBiblioteca.csproj.GenerateResource.cache
+C:\Users\mattia.senni\Desktop\verifica\WpfBiblioteca\WpfBiblioteca\obj\Debug\WpfBiblioteca.csproj.CoreCompileInputs.cache
+C:\Users\mattia.senni\Desktop\verifica\WpfBiblioteca\WpfBiblioteca\obj\Debug\WpfBiblioteca.exe
+C:\Users\mattia.senni\Desktop\verifica\WpfBiblioteca\WpfBiblioteca\obj\Debug\WpfBiblioteca.pdb

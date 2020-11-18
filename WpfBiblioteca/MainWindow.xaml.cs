@@ -23,9 +23,15 @@ namespace WpfBiblioteca
         public MainWindow()
         {
             InitializeComponent();
+            Inizializza();
+        }
+        private void Inizializza()
+        {
+
         }
 
-        private void btnAggiungiLibro_Copy_Click(object sender, RoutedEventArgs e)
+
+        private void btnInformazioniBiblioteca_Click(object sender, RoutedEventArgs e)
         {
 
         }
@@ -42,22 +48,47 @@ namespace WpfBiblioteca
 
         private void btnCercaAutore_Click(object sender, RoutedEventArgs e)
         {
+            string search = txtCercaAutore.Text.ToUpper();
 
         }
 
         private void btnInformazioniLibro_Click(object sender, RoutedEventArgs e)
         {
-
+            try
+            {
+                Libro l = (Libro)lstLibri.SelectedItem;
+                MessageBox.Show(l.ToString());
+            }catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void btnReadingTime_Click(object sender, RoutedEventArgs e)
         {
-
+            try
+            {
+                Libro l = (Libro)lstLibri.SelectedItem;
+                MessageBox.Show(l.ReadingTime());
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void ListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-
+            if(lstLibri.SelectedIndex != -1)
+            {
+                btnInformazioniLibro.IsEnabled = true;
+                btnReadingTime.IsEnabled = true;
+            }
+            else
+            {
+                btnInformazioniLibro.IsEnabled = false;
+                btnReadingTime.IsEnabled = false;
+            }
         }
 
         private void btnHome_Click(object sender, RoutedEventArgs e)
@@ -67,7 +98,16 @@ namespace WpfBiblioteca
 
         private void btnCreaLibro_Click(object sender, RoutedEventArgs e)
         {
+            try
+            {
 
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
+
+        
     }
 }
