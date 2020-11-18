@@ -59,5 +59,15 @@ namespace WpfBiblioteca
         {
 
         }
+
+        private void btnHome_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnCreaLibro_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

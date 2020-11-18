@@ -7,28 +7,46 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="513.086" Width="827.163">
     <Grid>
-        <Label Content="biblioteca" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="48" Width="547" FontFamily="Showcard Gothic" FontSize="36" HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom"/>
-        <ListView HorizontalAlignment="Left" Height="337" Margin="10,104,0,0" VerticalAlignment="Top" Width="799" SelectionChanged="ListView_SelectionChanged">
-            <ListView.View>
-                <GridView>
-                    <GridViewColumn Header="Titolo" Width="150px" DisplayMemberBinding="{Binding Titolo}"/>
-                    <GridViewColumn Header="Autore" Width="150px" DisplayMemberBinding="{Binding Autore}"/>
-                    <GridViewColumn Header="Editore" Width="150px" DisplayMemberBinding="{Binding Editore}"/>
-                    <GridViewColumn Header="Anno pubblicazione" Width="150px" DisplayMemberBinding="{Binding AnnoPubblicazione}"/>
-                    <GridViewColumn Header="numero pagine" Width="150px" DisplayMemberBinding="{Binding NumeroPagine}"/>
-                </GridView>
-            </ListView.View>
-        </ListView>
-        <TextBox x:Name="txtCercaLibro" HorizontalAlignment="Left" Height="36" Margin="10,63,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="271"/>
-        <Button x:Name="btnCercaLibro" Content="Cerca Libro" HorizontalAlignment="Left" Margin="286,63,0,0" VerticalAlignment="Top" Width="121" Height="36" Click="btnCercaLibro_Click"/>
-        <Button x:Name="btnAggiungiLibro" Content="Aggiungi Libro" HorizontalAlignment="Left" Margin="688,10,0,0" VerticalAlignment="Top" Width="121" Height="48" Click="btnAggiungiLibro_Click"/>
-        <TextBox x:Name="txtCercaAutore" HorizontalAlignment="Left" Height="36" Margin="412,63,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="271"/>
-        <Button x:Name="btnCercaAutore" Content="Cerca Autore" HorizontalAlignment="Left" Margin="688,63,-17,0" VerticalAlignment="Top" Width="121" Height="36" Click="btnCercaAutore_Click"/>
-        <Label Content="i libri sono: " HorizontalAlignment="Left" Margin="252,446,0,0" VerticalAlignment="Top" Width="431" HorizontalContentAlignment="Right"/>
-        <Label x:Name="lblNumeroLibri" Content="" HorizontalAlignment="Left" Margin="688,446,0,0" VerticalAlignment="Top" Width="121"/>
-        <Button x:Name="btnInformazioniLibro" Content="informazioni libro" HorizontalAlignment="Left" Margin="10,446,0,0" VerticalAlignment="Top" Width="117" Height="26" Click="btnInformazioniLibro_Click" IsEnabled="False"/>
-        <Button x:Name="btnReadingTime" Content="reading time" HorizontalAlignment="Left" Margin="132,446,0,0" VerticalAlignment="Top" Width="115" Height="26" Click="btnReadingTime_Click" IsEnabled="False"/>
-        <Button x:Name="btnAggiungiLibro_Copy" Content="informaioni&#xD;&#xA;sulla biblioteca" HorizontalAlignment="Left" Margin="562,10,0,0" VerticalAlignment="Top" Width="121" Height="48" Click="btnAggiungiLibro_Copy_Click"/>
+        <Grid x:Name="grdHome">
+            <Label Content="biblioteca" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="48" Width="547" FontFamily="Showcard Gothic" FontSize="36" HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom"/>
+            <ListView HorizontalAlignment="Left" Height="337" Margin="10,104,0,0" VerticalAlignment="Top" Width="799" SelectionChanged="ListView_SelectionChanged">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="Titolo" Width="150px" DisplayMemberBinding="{Binding Titolo}"/>
+                        <GridViewColumn Header="Autore" Width="150px" DisplayMemberBinding="{Binding Autore}"/>
+                        <GridViewColumn Header="Editore" Width="150px" DisplayMemberBinding="{Binding Editore}"/>
+                        <GridViewColumn Header="Anno pubblicazione" Width="150px" DisplayMemberBinding="{Binding AnnoPubblicazione}"/>
+                        <GridViewColumn Header="numero pagine" Width="150px" DisplayMemberBinding="{Binding NumeroPagine}"/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+            <TextBox x:Name="txtCercaLibro" HorizontalAlignment="Left" Height="36" Margin="10,63,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="271"/>
+            <Button x:Name="btnCercaLibro" Content="Cerca Libro" HorizontalAlignment="Left" Margin="286,63,0,0" VerticalAlignment="Top" Width="121" Height="36" Click="btnCercaLibro_Click"/>
+            <Button x:Name="btnAggiungiLibro" Content="Aggiungi Libro" HorizontalAlignment="Left" Margin="688,10,0,0" VerticalAlignment="Top" Width="121" Height="48" Click="btnAggiungiLibro_Click"/>
+            <TextBox x:Name="txtCercaAutore" HorizontalAlignment="Left" Height="36" Margin="412,63,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="271"/>
+            <Button x:Name="btnCercaAutore" Content="Cerca Autore" HorizontalAlignment="Left" Margin="688,63,-17,0" VerticalAlignment="Top" Width="121" Height="36" Click="btnCercaAutore_Click"/>
+            <Label Content="i libri sono: " HorizontalAlignment="Left" Margin="252,446,0,0" VerticalAlignment="Top" Width="431" HorizontalContentAlignment="Right"/>
+            <Label x:Name="lblNumeroLibri" Content="" HorizontalAlignment="Left" Margin="688,446,0,0" VerticalAlignment="Top" Width="121"/>
+            <Button x:Name="btnInformazioniLibro" Content="informazioni libro" HorizontalAlignment="Left" Margin="10,446,0,0" VerticalAlignment="Top" Width="117" Height="26" Click="btnInformazioniLibro_Click" IsEnabled="False"/>
+            <Button x:Name="btnReadingTime" Content="reading time" HorizontalAlignment="Left" Margin="132,446,0,0" VerticalAlignment="Top" Width="115" Height="26" Click="btnReadingTime_Click" IsEnabled="False"/>
+            <Button x:Name="btnAggiungiLibro_Copy" Content="informaioni&#xD;&#xA;sulla biblioteca" HorizontalAlignment="Left" Margin="562,10,0,0" VerticalAlignment="Top" Width="121" Height="48" Click="btnAggiungiLibro_Copy_Click"/>
+        </Grid>
+        <Grid x:Name="grdAggiungiLibro" Visibility="Hidden">
+            <Button x:Name="btnHome" Content="HOME" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="110" Height="64" FontSize="22" Click="btnHome_Click"/>
+            <Label Content="autore" HorizontalAlignment="Left" Margin="236,131,0,0" VerticalAlignment="Top" Width="142"/>
+            <Label Content="titolo" HorizontalAlignment="Left" Margin="236,162,0,0" VerticalAlignment="Top" Width="142"/>
+            <Label Content="anno pubblicazione" HorizontalAlignment="Left" Margin="236,193,0,0" VerticalAlignment="Top" Width="142"/>
+            <Label Content="editore" HorizontalAlignment="Left" Margin="236,224,0,0" VerticalAlignment="Top" Width="142"/>
+            <Label Content="numero pagine" HorizontalAlignment="Left" Margin="236,255,0,0" VerticalAlignment="Top" Width="142"/>
+            <TextBox x:Name="txtAutore" HorizontalAlignment="Left" Height="26" Margin="383,131,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="164"/>
+            <TextBox x:Name="txtTitolo" HorizontalAlignment="Left" Height="26" Margin="383,162,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="164"/>
+            <TextBox x:Name="txtAnnoPubblicazione" HorizontalAlignment="Left" Height="26" Margin="383,193,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="164"/>
+            <TextBox x:Name="txtEditore" HorizontalAlignment="Left" Height="26" Margin="383,224,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="164"/>
+            <TextBox x:Name="txtNumeroPagine" HorizontalAlignment="Left" Height="26" Margin="383,255,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="164"/>
+            <Button x:Name="btnCreaLibro" Content="Crea Libro" HorizontalAlignment="Left" Margin="236,286,0,0" VerticalAlignment="Top" Width="311" Height="29" Click="btnCreaLibro_Click"/>
+            <Label Content="Aggiungi un libro" HorizontalAlignment="Left" Margin="236,89,0,0" VerticalAlignment="Top" Height="37" Width="311" FontSize="20" HorizontalContentAlignment="Center"/>
+
+        </Grid>
 
     </Grid>
 </Window>
